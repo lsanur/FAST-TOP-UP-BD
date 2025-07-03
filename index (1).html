@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast TopUp BD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fast TopUp BD</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>  <section id="home">
+    <h2>Welcome to Fast TopUp BD</h2>
+    <p>Instant top-up for Free Fire, PUBG, Clash of Clans, and more.</p>
+  </section>  <section id="games">
+    <h2>Select Game & Top-Up</h2>
+    <form action="submit_order.php" method="POST">
+      <label for="game">Choose Game:</label>
+      <select id="game" name="game">
+        <option value="freefire">Free Fire</option>
+        <option value="pubg">PUBG</option>
+        <option value="coc">Clash of Clans</option>
+      </select><label for="uid">Player UID:</label>
+  <input type="text" id="uid" name="uid" required>
+
+  <label for="amount">Select Top-Up Amount:</label>
+  <select id="amount" name="amount">
+    <option value="50">50৳</option>
+    <option value="100">100৳</option>
+    <option value="200">200৳</option>
+  </select>
+
+  <label for="txnid">Bkash Transaction ID:</label>
+  <input type="text" id="txnid" name="txnid" required>
+
+  <input type="submit" value="Submit Order">
+</form>
+
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Bkash: 01778441491</p>
+    <p>WhatsApp: <a href="https://wa.me/8801778441491">Chat Now</a></p>
+    <p>Facebook: <a href="https://facebook.com/yourpage">Visit Page</a></p>
+  </section>  <footer>
+    <p>&copy; 2025 Fast TopUp BD. All rights reserved.</p>
+  </footer>
+</body>
+</html>
